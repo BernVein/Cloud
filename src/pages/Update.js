@@ -15,7 +15,8 @@
       e.preventDefault();
     
       if (!title || !method || !rating) {
-        setFormError("Please fill in all the fields correctly.");
+        setFormError('すべての項目を正しく入力してください (Please fill in all the fields correctly)');
+
         return;
       }
     
@@ -25,7 +26,8 @@
         .eq("id", id);
     
       if (error) {
-        setFormError("Please fill in all the fields correctly.");
+        setFormError('すべての項目を正しく入力してください (Please fill in all the fields correctly)');
+
       }
       if (data) {
         setFormError(null);

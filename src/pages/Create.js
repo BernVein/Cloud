@@ -14,7 +14,7 @@ const Create = () => {
     e.preventDefault()
 
     if (!title || !method || !rating) {
-      setFormError('Please fill in all the fields correctly.')
+      setFormError('すべての項目を正しく入力してください (Please fill in all the fields correctly)');
       return
     }
 
@@ -24,7 +24,8 @@ const Create = () => {
 
     if (error) {
       console.log(error)
-      setFormError('Please fill in all the fields correctly.')
+      setFormError('すべての項目を正しく入力してください (Please fill in all the fields correctly)');
+
     }
     if (data) {
       console.log(data)
