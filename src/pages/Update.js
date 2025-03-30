@@ -31,6 +31,7 @@
         setFormError(null);
   
       }
+      alert('映画が更新されました!(Movie updated!)')
       navigate("/");
     };
     

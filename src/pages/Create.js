@@ -29,8 +29,9 @@ const Create = () => {
     if (data) {
       console.log(data)
       setFormError(null)
-      navigate('/')
     }
+    alert('映画が追加されました！(Movie added!)')
+    navigate('/')
   }
 
   return (
@@ -58,6 +59,7 @@ const Create = () => {
           value={rating}
           onChange={(e) => setRating(e.target.value)}
         />
+
 
         <button>映画を追加 (Add Movie)</button>
 
