@@ -25,7 +25,7 @@ const Home = () => {
       const { data, error } = await supabase.from('smoothies').select();
 
       if (error) {
-        setFetchError("Could not fetch the data");
+        setFetchError("It seems that Supabase paused the service. Contact Bern Vein Balermo to fix this issue.");
         setSmoothies(null);
         console.log(error);
       } else {
